@@ -8,7 +8,7 @@
 
 ## Instalace
 
-Stáhněte si [archiv se soubory tohoto projektu verze 2.0](https://github.com/katemihalikova/unisim-00-razova/releases/download/v2.0/razova-GVD_00-2.0.zip) a rozbalte jej do složky se simulátorem Unisim verze 1.09. Tři soubory budou přidány a jeden soubor bude přepsán. Spusťte soubor `Unisim00.bat` a vyberte oblast `00`.
+Stáhněte si [archiv se soubory tohoto projektu verze 2.1](https://github.com/katemihalikova/unisim-00-razova/releases/download/v2.1/razova-GVD_00-2.1.zip) a rozbalte jej do složky se simulátorem Unisim verze 1.09. Spusťte soubor `Unisim00.bat` a vyberte oblast `00`.
 
 <details>
 <summary><em>Podrobné vysvětlení</em></summary>
@@ -91,11 +91,11 @@ Mimořádné vlaky jsou zaváděny v případě potřeby. Pouze tyto vlaky mohou
 * Do uzlu L:00 je zapojeno pět vlaků s přepravou cestujících, přičemž stanice disponuje pouze pěti kolejemi s nástupištěm, pozor na případné obsazení koleje s nástupištěm nákladním vlakem
 * Lokomotiva od vlaku R 8xx čeká 2 hodiny na další spoj, souprava však točí zpět po pouhých 14 minutách, přizpůsobte tomu využití kolejí ve stanici, např. čekající lokomotivu mějte připravenou na koleji 4a a přijíždějící rychlík pošlete na kolej 4, kam může čekající lokomotiva ihned přijet
 * Provoz kolem 0:00 (půlnoc):
-  * Souprava i loko od posledního R 8xx pokračují jako Os do Lindavy a pak se vrací Sv do Razové
+  * Souprava i lokomotiva od posledního R 8xx pokračují jako Os do Lindavy a pak se vrací Sv do Razové
   * Os z Rozmezí jede z Razové zpět do Plání a pak se vrací Sv do Razové
   * Os z Vidlí pokračuje dále do Modravy
 * Provoz kolem 4:00:
-  * Souprava i loko pro první R 8xx jedou Sv do Lindavy, odkud se vrací jako Os do Razové, odkud pokračuje již běžně jako R do Modravy
+  * Souprava i lokomotiva pro první R 8xx jedou Sv do Lindavy, odkud se vrací jako Os do Razové, odkud pokračuje již běžně jako R do Modravy
   * Souprava od večerního Os z Plání jede opět Sv do Plání, odkud se vrací jako Os do Razové, odkud pokračuje již běžně jako Os do Rozmezí
   * Os z Modravy pokračuje dále do Vidlí
   * Souprava pro účelové spoje do El. Osečná jede Sv do Tuhaně, odkud se vrací jako Os přes Razovou přímo do El. Osečná
@@ -106,8 +106,20 @@ Mimořádné vlaky jsou zaváděny v případě potřeby. Pouze tyto vlaky mohou
 * V pracovní dny se v době jízdy účelových spojů (cca 16:40, 17:15, 17:50, 18:10, 18:40 a 19:15) ve stanici nachází tři vlaky s přepravou cestujících, dejte pozor, aby nedošlo k ohrožení nástupu a výstupu cestujících
 * Pro odstavení soupravy účelových spojů použijte kolej 2d
 
+## Výluky
+* [Scénář výluky trati v úseku Razová - Šance](./V%C3%BDluka%20Razov%C3%A1%20-%20%C5%A0ance.md)
+
+## Nedostatky simulátoru
+
+* Pokud začínáte simulaci hrát v 6 hodin, je třeba urychleně naposunovat a přivěsit lokomotivu k vlaku 882; v ostatních sudých hodinách (4, 8-22) je lokomotiva již přivěšena
+
 ## Seznam změn
 
+* v2.1
+  * Přidán dokument [Scénář výluky trati v úseku Razová - Šance](./V%C3%BDluka%20Razov%C3%A1%20-%20%C5%A0ance.md), pomocí kterého je možné si nasimulovat denní či dlouhodobou výluku tohoto úseku bez nutnosti měnit soubor GVD
+  * Os 5419: zrušeno zbytečné čekání ve výh. Souš
+  * Opravena chybějící lokomotiva při startu hry v 6:00 (nedostatek simulátoru)
+  * Opraveno seřazení vlaků v souboru s GVD
 * v2.0
   * Přidány vložené Os 54xx Modrava - Rozmezí jedoucí v přibližném 1h taktu s vynecháním v sedle
   * Křižování 6201 × 6202 přesunuto do Rozmezí drobnou úpravou časových poloh
