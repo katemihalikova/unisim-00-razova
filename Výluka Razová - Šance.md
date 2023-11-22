@@ -1,6 +1,6 @@
 # Scénář výluky trati v úseku Razová - Šance
 
-Tento scénář lze použít pro případ plánované i nenadálé výluky trati v úseku Razová - Šance, případně nějaké části tohoto úseku.
+Tento scénář lze použít pro případ plánované i nenadálé výluky trati v úseku Razová - Šance, případně některé části tohoto úseku.
 
 ## Osobní doprava
 
@@ -8,16 +8,16 @@ Všechny vlaky jsou ve vyloučeném úseku nahrazeny NAD. NAD je vždy vedena me
 
 ### Mimořádné obraty v žst. Šance
 
-#### MSp 18xx (denně)
-* 1800 → 1801
-* 1802 → 1803
-* 1804 → 1805
-* 1806 → 1807
-* 1808 → 1809
-* 1810 → 1811
-* 1812 → 1813
-* 1814 → 1815
-* 1816 → 1817
+#### MSp 16xx (denně)
+* 1601 → 101600
+* 1603 → 101602
+* 1605 → 101604
+* 1607 → 101606
+* 1609 → 101608
+* 1611 → 101610
+* 1613 → 101612
+* 1615 → 101614
+* 1617 → 101616
 
 #### MOs 62xx (denně)
 * _odstav_ → 6201 (od 6222 předchozí den)
@@ -50,25 +50,25 @@ Všechny vlaky jsou ve vyloučeném úseku nahrazeny NAD. NAD je vždy vedena me
 * 5426 → 105427
 * 5428 → 105429
 
-#### MOs 262xx (denně)
-* _odstav_ → 105481 (od 26218 předchozí den)
-* 26218 → _odstav_ (pro 105481 další den)
+#### MOs 162xx (denně)
+* _odstav_ → 116201 (od 16220 předchozí den)
+* 16210 → 116211
+* 16220 → _odstav_ (pro 116201 další den)
 
 ### Mimořádné obraty v žst. Razová
 
-#### MSp 16xx (18xx) (denně)
-* 1600 → 1601
-* 1602 → 1603
-* 1604 → 1605
-* 1606 → 1607
-* 1608 → 1609
-* 1610 → 1611
-* 1612 → 1613
-* 1614 → 1615
-* 1616 → 1617
+#### MSp 16xx (denně)
+* 1600 → 101601
+* 1602 → 101603
+* 1604 → 101605
+* 1606 → 101607
+* 1608 → 101609
+* 1610 → 101611
+* 1612 → 101613
+* 1614 → 101615
+* 1616 → 101617
 
 #### Os 54xx (v ⚒︎)
-* _odstav_ → 2292 (od 5429 nebo 5481 předchozí den)
 * 5481 → 105400
 * 5401 → 105402
 * 5403 → 105404
@@ -84,21 +84,18 @@ Všechny vlaky jsou ve vyloučeném úseku nahrazeny NAD. NAD je vždy vedena me
 * 5423 → 105424
 * 5425 → 105426
 * 5427 → 105428
-* 5429 → _odstav_ (pro 2292 další den)
 
-#### Os 54xx (v ⑥ a †)
-* _odstav_ → 2292 (od 5429 nebo 5481 předchozí den)
-* 5481 → _odstav_ (pro 2292 další den)
+#### MOs 162xx
+* nahrazeny NAD
 
 ### Vlaky odřeknuté nad rámec vyloučeného úseku
-* 6292 odřeknut
-* 6291 odřeknut
-* 105481 odřeknut v úseku Šance - El. Osečná, pokud není v žst. Šance k dispozici souprava od vlaku 26218
+* 6290, 6291 odřeknuty
+* 16290, 16291, 16292 odřeknuty
+* 116201, 116211 odřeknuty (Šance - El. Osečná), pokud není v žst. Šance k dispozici souprava pro vlak
 
 ### Vlaky nahrazené NAD nad rámec vyloučeného úseku
-* 6223 nahrazen NAD v celé trase
-* 6200 nahrazen NAD v celé trase
-* 5481 nahrazen NAD v úseku Razová - El. Osečná
+* 6200, 6223 nahrazeny NAD v celé trase
+* 16201, 16210, 16211, 16220 nahrazeny NAD v celé trase, bus neobsluhuje žst. Šance, spojení Šance - El. Osečná je zajišťováno vlakem (Bus 16201 a Bus 16211 žst. Šance obsluhují, pokud není k dispozici souprava pro vlak)
 
 ### Změny přípojových vazeb
 * v době mezi 4:10 a 7:10 jsou maximální čekací doby v žst. Razová 20 minut
@@ -106,8 +103,6 @@ Všechny vlaky jsou ve vyloučeném úseku nahrazeny NAD. NAD je vždy vedena me
 * v době mezi 22:10 a 4:10 jsou maximální čekací doby v žst. Razová 60 minut
 - maximální čekací doby v žst. Šance jsou 10 minut
 - _pokud simulace začne nabízet vlak z El. Osečná dříve, než odjede předchozí vlak, odmítněte jej a nejprve veďte předchozí vlak_
-* není přípoj v žst. Šance mezi Bus 5481 a 105481
-* není přípoj v žst. Šance mezi 6202 a Bus 5481 (pouze pokud jede 105481)
 
 ## Nákladní doprava
 

@@ -8,14 +8,14 @@
 
 ## Instalace
 
-Stáhněte si [archiv se soubory tohoto projektu verze 2.1](https://github.com/katemihalikova/unisim-00-razova/releases/download/v2.1/razova-GVD_00-2.1.zip) a rozbalte jej do složky se simulátorem Unisim verze 1.09. Spusťte soubor `Unisim00.bat` a vyberte oblast `00`.
+Stáhněte si [archiv se soubory tohoto projektu verze 3.0](https://github.com/katemihalikova/unisim-00-razova/releases/download/v3.0/razova-GVD_00-3.0.zip) a rozbalte jej do složky se simulátorem Unisim verze 1.09. Spusťte soubor `Unisim00.bat` a vyberte oblast `00`.
 
 <details>
 <summary><em>Podrobné vysvětlení</em></summary>
 
 Soubory `GVD_00.DAT` a `situ00.txt` z tohoto repozitáře zkopírujte do složky `DATA__00` uvnitř hlavní složky Unisimu.
 
-Tento GVD vyžaduje situační soubor (`situ`). Protože však Unisim situační soubor v oblasti `00` nepodporuje, je potřeba spouštěcí soubor upravit (patchnout). Tím však dojde ke znefunkčnění jiné oblasti, proto takto upravený spouštěcí soubor používejte pouze pro oblast `00` se situačním souborem. Tento upravený (patchnutý) spouštěcí soubor verze 1.09 se nachází v archivu ke stažení, kde se nazývá `Unisim00.exe`, aby nedošlo k záměně s původním spouštěcím souborem (lze provozovat oba vedle sebe, původní pro všechny oblasti kromě `00`).
+Tento GVD obsahuje situační soubor (`situ`). Protože však Unisim situační soubor v oblasti `00` nepodporuje, je potřeba spouštěcí soubor upravit (patchnout). Tím však dojde ke znefunkčnění jiné oblasti, proto takto upravený spouštěcí soubor používejte pouze pro oblast `00` se situačním souborem. Tento upravený (patchnutý) spouštěcí soubor verze 1.09 se nachází v archivu ke stažení, kde se nazývá `Unisim00.exe`, aby nedošlo k záměně s původním spouštěcím souborem (lze provozovat oba vedle sebe, původní pro všechny oblasti kromě `00`).
 
 Pro použití neoriginálního GVD je třeba Unisim spouštět s parametrem `2479`, tedy např. `Unisim00.exe 2479`. Variantně lze jednoduše využít `bat` soubor přiložený v archivu ke stažení.
 
@@ -35,24 +35,24 @@ bspatch Unisim.exe Unisim00.exe Unisim.exe.109.bspatch
 
 Ministerstvo dopravy objednává dvě linky: každé dvě hodiny linku **Ex7 Modrava - Vidly**, která projíždí řízenou oblastí po dvojkolejné trati a zastavuje pouze v uzlu Razová, a každé dvě hodiny linku **R42 Modrava - Razová**, která prokládá linku Ex7 na 1h takt v části její trasy.
 
-Krajský úřad pak objednává běžné spoje na třech linkách: každé dvě hodiny linky **L3 Modrava - Vidly** a **L7 Rozmezí - Razová**, které ve stanici Razová váží na Ex7, a dále každé dvě hodiny zrychlenou linku **L37 Rozmezí - Vidly**, která doplňuje R42 na zbylých úsecích.
+Krajský úřad pak objednává běžné spoje na čtyřech linkách: každé dvě hodiny linky **L3 Modrava - Vidly** a **L7 Rozmezí - Razová**, které ve stanici Razová váží na Ex7, dále každé dvě hodiny zrychlenou linku **L37 Rozmezí - Vidly**, která doplňuje R42 na zbylých úsecích, a nakonec v pracovní dny mimo dopolední sedlo také linku **L70 Modrava - Rozmezí** v přibližně hodinovém taktu, která prokládá linky L3/L7 a R42/L37 na výsledný přibližně půlhodinový takt.
 
-Na směny do významných podniků v okolí stanic Grimsel a El. Osečná jsou provozovány účelové spoje **L39 Modrava - Grimsel** (vždy 1 pár) a **L79 Šance - El. Osečná** (vždy 5 párů, ráno je první spoj veden Tuhaň - El. Osečná).
+Na směny do významných podniků v okolí stanic Grimsel (dvousměnný i třísměnný provoz) a El. Osečná (dvousměnný provoz) jsou provozovány účelové spoje **L39 Modrava - Grimsel** (vždy 1 pár) a **L79 Šance - El. Osečná** (vždy 5 párů, některé spoje vedeny Tuhaň - El. Osečná a opačně). Mezi linkami L3 a L39 je možno přestupovat ve stanici Tuhaň, linka L79 váže na ostatní příslušné linky ve stanici Šance.
 
 Brzy ráno a pozdě v noci je provoz upraven, nejedou Sp vlaky, místo nich jedou Os vlaky, přičemž některé končí ještě v rámci oblasti a na přenocování se Sv jízdou přesouvají do Razové a brzy ráno naopak.
 
-V noci je provozován jeden pár vlaků EuroNight, který mezi Modravou a Vidly nikde nezastavuje.
+V noci je provozován jeden pár vlaků EuroNight, který v řízené oblasti nikde nezastavuje.
 
 Číslo | Trasa | Zastavuje | Jede
 --- | --- | --- | ---
 IC 1xx | Modrava - Vidly | Razová | denně
 R 8xx | Modrava - Razová | Tuhaň, Razová (obrat) | denně
-MSp 16xx/18xx | Rozmezí - Vidly | Šance, Razová (úvrať), Skřípov | denně
-Os 22xx | Modrava - Vidly | všude | denně
+MSp 16xx | Rozmezí - Vidly | Šance, Razová (úvrať), Skřípov | denně
+Os 52xx | Modrava - Vidly | všude | denně
 MOs 62xx | Rozmezí - Razová | všude | denně
 Os 54xx | Modrava - Rozmezí | všude | v ⚒︎
-MOs 228x/263xx | Modrava - Grimsel | všude (Tuhaň úvrať) | 6h+18h: denně<br>14h+22h: v ⚒︎
-MOs 548x/262xx | (Tuhaň -) Šance - El. Osečná | všude | denně
+MOs 528x | Modrava - Grimsel | všude (Tuhaň úvrať) | 6h+18h: denně<br>14h+22h: v ⚒︎
+MOs 162xx | (Tuhaň -) Šance - El. Osečná | všude | denně
 EN 5x | Modrava - Vidly | nikde | denně
 
 ## Nákladní doprava
@@ -82,7 +82,7 @@ Vn 508xx | El. Osečná - Rozmezí | 2h neúplný
 Mn 864xx | Modrava - Lindava a zpět | 1 pár
 Mn 827xx | Rozmezí - Razová a zpět | 1 pár
 
-Mimořádné vlaky jsou zaváděny v případě potřeby. Pouze tyto vlaky mohou vyžadovat nácestnou prohlídku, střídání na ose nebo přidání postrku. Všechny mimořádné vlaky mají čísla 9xxxx. K dispozici jsou 4 postrkové lokomotivy ve stanici Tuhaň a 2 postrkové lokomotivy ve stanici Nebákov. V případě nouze lze také využít operativní zálohu v Razové.
+Mimořádné vlaky jsou zaváděny v případě potřeby. Pouze tyto vlaky mohou vyžadovat nácestnou prohlídku, střídání na ose nebo přidání postrku. Všechny mimořádné vlaky mají čísla 9xxxx. K dispozici jsou 4 postrkové lokomotivy ve stanici Tuhaň a 2 postrkové lokomotivy ve stanici Nebákov. V případě nouze lze také využít operativní zálohu v Razové. Použité postrkové lokomotivy přednostně vracejte jako přípřež na jiných vhodných vlacích, popř. zaveďte Lv vlak. Lv vlaky, které simulace náhodně nabízí, stahujte ve stanici Tuhaň k dalšímu použití.
 
 ## Poznámky o organizaci provozu
 
@@ -103,18 +103,30 @@ Mimořádné vlaky jsou zaváděny v případě potřeby. Pouze tyto vlaky mohou
 
 ### Šance
 
-* V pracovní dny se v době jízdy účelových spojů (cca 16:40, 17:15, 17:50, 18:10, 18:40 a 19:15) ve stanici nachází tři vlaky s přepravou cestujících, dejte pozor, aby nedošlo k ohrožení nástupu a výstupu cestujících
-* Pro odstavení soupravy účelových spojů použijte kolej 2d
+* V pracovní dny se v době jízdy účelových spojů (cca 5:15, 5:50, 6:10, 6:40, 7:15 a 16:40, 17:15, 17:45, 18:10, 18:40 a 19:15) ve stanici nachází tři vlaky s přepravou cestujících, dejte pozor, aby nedošlo k ohrožení nástupu a výstupu cestujících
+* Pro odstavení soupravy účelových spojů v ⚒︎ použijte kolej 2d
 
 ## Výluky
 * [Scénář výluky trati v úseku Razová - Šance](./V%C3%BDluka%20Razov%C3%A1%20-%20%C5%A0ance.md)
 
 ## Nedostatky simulátoru
 
-* Pokud začínáte simulaci hrát v 6 hodin, je třeba urychleně naposunovat a přivěsit lokomotivu k vlaku 882; v ostatních sudých hodinách (4, 8-22) je lokomotiva již přivěšena
+* Pokud používáte situační soubor a začínáte simulaci hrát v 6 hodin, je třeba urychleně naposunovat a přivěsit lokomotivu k vlaku 882; v ostatních sudých hodinách (4, 8-22) je lokomotiva již přivěšena
 
 ## Seznam změn
 
+* v3.0
+  * Přečíslování 22xx na 52xx (aby byly v grafikonu v simulátoru zobrazeny tenkou čarou)
+  * Přečíslování 16xx/18xx do jednotné řady 16xx a odstranění přečíslování ve stanici Razová, vlaky tak jedou v celé trase včetně úvrati pod stejným číslem
+  * Přečíslování 263xx na 528x a odstranění přečíslování ve stanici Tuhaň, vlaky nyní jedou v celé trase včetně úvrati pod stejným číslem
+  * Účelové spoje do El. Osečná (dříve 5481, 262xx, 6290):
+    * Přečíslovány do jednotného bloku 162xx
+    * Nově vedeny motorovým vozem s max. rychlostí 80 km/h, čemuž byly uzpůsobeny jízdní doby
+    * V pracovní dny zůstává původní režim (ráno Sv do Tuhaně a přímý Os z Tuhaně, přes den čeká v Šanci, po večerních spojích Sv do Razové)
+    * O víkendu po ranních spojích jede Os do Tuhaně, kde přes den čeká, poté přímý Os z Tuhaně na večerní spoje, po kterých opět přímý Os do Tuhaně, poté Sv do Razové
+  * Přidání doporučených kolejí v Razové pro vlaky IC a R
+  * Drobné posuny časových poloh dalších vlaků kolem 6. a 18. hodiny kvůli změnám 162xx
+  * Drobný posun časových poloh vlaků 428xx během dne, čímž došlo k odstranění kolizního potkávání vlaků v Razové
 * v2.1
   * Přidán dokument [Scénář výluky trati v úseku Razová - Šance](./V%C3%BDluka%20Razov%C3%A1%20-%20%C5%A0ance.md), pomocí kterého je možné si nasimulovat denní či dlouhodobou výluku tohoto úseku bez nutnosti měnit soubor GVD
   * Os 5419: zrušeno zbytečné čekání ve výh. Souš
